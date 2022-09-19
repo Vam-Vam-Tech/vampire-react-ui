@@ -5,6 +5,7 @@
   "author": "htetarkarhlaing",
   "license": "MIT",
   "repository": "htetarkarhlaing/vampire-ui",
+  "homepage": "https://htetarkarhlaing.github.io/vampire-ui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",

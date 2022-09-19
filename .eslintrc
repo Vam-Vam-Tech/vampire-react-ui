@@ -1,34 +1,30 @@
 {
   "parser": "@typescript-eslint/parser",
   "extends": [
-    "standard",
-    "standard-react",
-    "plugin:prettier/recommended",
-    "prettier/standard",
-    "prettier/react",
-    "plugin:@typescript-eslint/eslint-recommended"
+      "airbnb",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:jsx-a11y/recommended"
   ],
-  "env": {
-    "node": true
-  },
+  "plugins": [
+      "prettier",
+      "react"
+  ],
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "ecmaFeatures": {
-      "legacyDecorators": true,
-      "jsx": true
-    }
-  },
-  "settings": {
-    "react": {
-      "version": "16"
-    }
+      "ecmaFeatures": {
+          "jsx": true
+      }
   },
   "rules": {
-    "space-before-function-paren": 0,
-    "react/prop-types": 0,
-    "react/jsx-handler-names": 0,
-    "react/jsx-fragments": 0,
-    "react/no-unused-prop-types": 0,
-    "import/export": 0
+      "prettier/prettier": ["error"],
+      "react-hooks/exhaustive-deps":          "warn",
+      "react-hooks/rules-of-hooks":           "error",
+      "react/jsx-filename-extension":         [1, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-indent-props":               [2, 4],
+      "react/jsx-indent":                     [2, 4],
+      "react/jsx-one-expression-per-line":    [0],
+      "react/prefer-stateless-function":      [1],
+      "react/static-property-placement":      [1, "property assignment"]
   }
 }

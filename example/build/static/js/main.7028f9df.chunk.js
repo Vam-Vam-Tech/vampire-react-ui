@@ -1,0 +1,2 @@
+(this["webpackJsonpvampire-ui-example"]=this["webpackJsonpvampire-ui-example"]||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var r=t(0),a=t.n(r),c=t(2),l=t.n(c),u=function(e){return a.a.createElement("button",{className:"px-2 py-1 text-green-600 bg-green-200"},e.label||e.children)},i=(t(8),function(){return a.a.createElement(u,{label:"hey"},"Hey")});l.a.render(a.a.createElement(i,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.7028f9df.chunk.js.map

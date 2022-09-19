@@ -1,5 +1,2 @@
-interface Props {
-    text: string;
-}
-export declare const ExampleComponent: ({ text }: Props) => JSX.Element;
-export {};
+import './index.css';
+export { default as Button } from "./components/Button";

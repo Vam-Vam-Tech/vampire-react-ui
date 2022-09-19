@@ -1,10 +1,9 @@
 import React from 'react'
-
-import { ExampleComponent } from 'vampire-ui'
+import { Button } from 'vampire-ui'
 import 'vampire-ui/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Button label="hey">Hey</Button>
 }
 
 export default App

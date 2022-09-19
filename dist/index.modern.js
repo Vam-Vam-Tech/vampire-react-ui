@@ -1,13 +1,10 @@
-import { createElement } from 'react';
+import React from 'react';
 
-var styles = {"test":"_3ybTi"};
-
-var ExampleComponent = function ExampleComponent(_ref) {
-  var text = _ref.text;
-  return createElement("div", {
-    className: styles.test
-  }, "Example Component: ", text);
+var Button = function Button(props) {
+  return React.createElement("button", {
+    className: 'px-2 py-1 text-red-600 bg-red-200'
+  }, props.label || props.children);
 };
 
-export { ExampleComponent };
+export { Button };
 //# sourceMappingURL=index.modern.js.map

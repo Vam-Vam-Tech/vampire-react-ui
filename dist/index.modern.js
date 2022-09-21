@@ -2,7 +2,7 @@ import React from 'react';
 
 var Button = function Button(props) {
   return React.createElement("button", {
-    className: 'px-2 py-1 text-red-600 bg-red-200'
+    className: "px-6 py-2 \n            text-" + (props.color ? props.color : 'neutral') + "-600 \n            bg-" + (props.color ? props.color : 'neutral') + "-100 \n            text-center rounded-md"
   }, props.label || props.children);
 };
 

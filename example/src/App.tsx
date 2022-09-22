@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Progress } from 'vampire-ui'
+import { Button, Progress, Input } from 'vampire-ui'
+
 import 'vampire-ui/dist/index.css'
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <Progress.Spinner label="Hey">
 
     </Progress.Spinner>
+    <Input label="Name" children="Name is required" onChange={(e)=>e.target.value} placeholder="Enter Name"/>
   </div>
 }
 

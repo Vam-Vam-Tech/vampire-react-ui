@@ -1,8 +1,12 @@
 import React from 'react';
 
-var Button = function Button(props) {
+const Button = props => {
   return React.createElement("button", {
-    className: "px-6 py-2 \n            text-" + (props.color ? props.color : 'neutral') + "-600 \n            bg-" + (props.color ? props.color : 'neutral') + "-100 \n            text-center rounded-md"
+    className: `px-6 py-2 
+            text-${props.color ? props.color : 'neutral'}-500 
+            bg-${props.color ? props.color : 'neutral'}-100
+            hover:bg-${props.color ? props.color : 'neutral'}-200
+            transition-all duration-300 text-center font-medium rounded-${props.rounded ? props.rounded : 'none'}`
   }, props.label || props.children);
 };
 

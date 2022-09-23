@@ -3,7 +3,7 @@ import React from 'react';
 const md = `max-w-[256px] max-h-[36px]`;
 const sm = `max-w-[256px] max-h-[48px]`;
 const lg = `max-w-[343px] max-h-[56px]`;
-const baseStyle = `flex justify-center item-center`;
+const baseStyle = `flex justify-center item-center bg-primary-bg-invert hover:bg-secondary active:bg-tertiary-bg text-primary-invert`;
 
 const Button = ({
   label,
@@ -13,7 +13,7 @@ const Button = ({
   size
 }) => {
   return React.createElement("button", {
-    className: `${baseStyle} ${size === 'sm' ? sm : size === 'lg' ? lg : md} px-4 py-1 bg-green-400 text-green-800 ${className}`,
+    className: `${baseStyle} ${size === 'sm' ? sm : size === 'lg' ? lg : md} px-4 py-1 ${className}`,
     onClick: e => onClick ? onClick(e) : null
   }, label || children);
 };

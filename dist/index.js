@@ -5,7 +5,7 @@ var React = _interopDefault(require('react'));
 var md = "max-w-[256px] max-h-[36px]";
 var sm = "max-w-[256px] max-h-[48px]";
 var lg = "max-w-[343px] max-h-[56px]";
-var baseStyle = "flex justify-center item-center";
+var baseStyle = "flex justify-center item-center bg-primary-bg-invert hover:bg-secondary active:bg-tertiary-bg text-primary-invert";
 
 var Button = function Button(_ref) {
   var label = _ref.label,
@@ -14,7 +14,7 @@ var Button = function Button(_ref) {
       className = _ref.className,
       size = _ref.size;
   return React.createElement("button", {
-    className: baseStyle + " " + (size === 'sm' ? sm : size === 'lg' ? lg : md) + " px-4 py-1 bg-green-400 text-green-800 " + className,
+    className: baseStyle + " " + (size === 'sm' ? sm : size === 'lg' ? lg : md) + " px-4 py-1 " + className,
     onClick: function onClick(e) {
       return _onClick ? _onClick(e) : null;
     }

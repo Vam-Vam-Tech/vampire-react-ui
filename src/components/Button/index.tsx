@@ -11,13 +11,14 @@ interface IButton {
     size?: 'sm' | 'md' | 'lg'
 }
 
-const Button: React.FC<IButton> = ({ label, children, onClick, className, size }) => {
+
+const Button: React.FC<IButton> = (props) => {
     return (
         <button
             className={`${baseStyle} ${size === 'sm' ? sm : size === 'lg' ? lg : md} px-4 py-1 ${className}`}
             onClick={(e) => onClick ? onClick(e) : null}
         >
-            {label || children}
+            {props.label || props.children}
         </button>
     )
 }

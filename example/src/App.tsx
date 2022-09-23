@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'vampire-ui'
 import 'vampire-ui/dist/index.css'
-
+import './App.css'
 const App = () => {
   return <div className='bg-white w-screen h-screen flex items-center justify-center space-x-4'>
     <Button size='sm' className="text-green-400">Request UberX</Button>

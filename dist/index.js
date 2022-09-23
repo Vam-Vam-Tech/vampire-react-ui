@@ -14,29 +14,8 @@ var Button = function Button(_ref) {
       className = _ref.className,
       size = _ref.size;
   return React.createElement("button", {
-    className: baseStyle + " " + (size === 'sm' ? sm : size === 'lg' ? lg : md) + " px-4 py-1 bg-green-400 text-green-800 " + className,
-    onClick: function onClick(e) {
-      return _onClick ? _onClick(e) : null;
-    }
-  }, label || children);
-};
-
-var Spinner = function Spinner(_ref) {
-  var label = _ref.label,
-      children = _ref.children;
-  return React.createElement("div", {
-    className: 'w-[78px] h-[53px]'
-  }, React.createElement("div", {
-    className: 'w-[24px] h-[24px]'
-  }, React.createElement("span", {
-    className: 'border'
-  }), React.createElement("span", {
-    className: 'border'
-  })), label || children);
-};
-
-var index = {
-  Spinner: Spinner
+    className: "px-6 py-2 \n            text-" + (props.color ? props.color : 'neutral') + "-500 \n            bg-" + (props.color ? props.color : 'neutral') + "-100\n            hover:bg-" + (props.color ? props.color : 'neutral') + "-200\n            transition-all duration-300 text-center font-medium rounded-" + (props.rounded ? props.rounded : 'none')
+  }, props.label || props.children);
 };
 
 exports.Button = Button;

@@ -1,40 +1,13 @@
 import React from 'react';
 
-const md = `max-w-[256px] max-h-[36px]`;
-const sm = `max-w-[256px] max-h-[48px]`;
-const lg = `max-w-[343px] max-h-[56px]`;
-const baseStyle = `flex justify-center item-center`;
-
-const Button = ({
-  label,
-  children,
-  onClick,
-  className,
-  size
-}) => {
+const Button = props => {
   return React.createElement("button", {
-    className: `${baseStyle} ${size === 'sm' ? sm : size === 'lg' ? lg : md} px-4 py-1 bg-green-400 text-green-800 ${className}`,
-    onClick: e => onClick ? onClick(e) : null
-  }, label || children);
-};
-
-const Spinner = ({
-  label,
-  children
-}) => {
-  return React.createElement("div", {
-    className: 'w-[78px] h-[53px]'
-  }, React.createElement("div", {
-    className: 'w-[24px] h-[24px]'
-  }, React.createElement("span", {
-    className: 'border'
-  }), React.createElement("span", {
-    className: 'border'
-  })), label || children);
-};
-
-var index = {
-  Spinner
+    className: `px-6 py-2 
+            text-${props.color ? props.color : 'neutral'}-500 
+            bg-${props.color ? props.color : 'neutral'}-100
+            hover:bg-${props.color ? props.color : 'neutral'}-200
+            transition-all duration-300 text-center font-medium rounded-${props.rounded ? props.rounded : 'none'}`
+  }, props.label || props.children);
 };
 
 export { Button, index as Progress };

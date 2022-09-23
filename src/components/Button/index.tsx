@@ -1,11 +1,18 @@
 import React from 'react'
+import { sm, md, lg, baseStyle } from './styles'
+
+type OnClickType = React.MouseEvent<HTMLButtonElement, MouseEvent>
 
 interface IButton {
     color?: string | null | undefined
     label?: string | null | undefined
     rounded?: string | null | undefined
     children?: JSX.Element | JSX.Element[] | string | null | undefined
+    onClick?: (e: OnClickType) => void
+    className?: string | null | undefined
+    size?: 'sm' | 'md' | 'lg'
 }
+
 
 const Button: React.FC<IButton> = (props) => {
     return (

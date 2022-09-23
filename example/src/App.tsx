@@ -1,8 +1,9 @@
 import React from 'react'
-import { Button } from 'vampire-ui'
+import { Button, Progress } from 'vampire-ui'
 import 'vampire-ui/dist/index.css'
 import './App.css'
 const App = () => {
+
     return (
         <>
             <div className="flex flex-row space-x-2">

@@ -10,5 +10,5 @@ const Button = props => {
   }, props.label || props.children);
 };
 
-export { Button };
+export { Button, index as Progress };
 //# sourceMappingURL=index.modern.js.map
